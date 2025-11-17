@@ -10,22 +10,67 @@
     <style>
         body{background-image: url(BG.jpg); background-repeat: no-repeat; 
 background-attachment: relative; background-size: cover; margin:0; padding:1px;}
-    .main {
-      background-image: url(header.jpg);
-      color: white;
-      text-align: center;
-      height: 170px;
-      align-content: center;
-      
-    }
+.menu-malasngoding{
+		background-image: url(header.jpg);
+    color: white;
+    height: 140px;
+    width:100%; 
+	}
+  .menu-malasngoding ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;  gap: 10px;
+	}
+	.menu-malasngoding > ul > li {
+		float: left;
+	}
+	.menu-malasngoding li a {
+		display: inline-block;
+		color: aqua;
+		text-align: center;
+		padding: 10px 12px;
+		text-decoration: none;  gap: 10px;
+	}
+	.menu-malasngoding li a:hover{
+		background-color: transparent;
+    border: 1px solid violet;
+    color: white;
+	}
+	li.dropdown {
+		display: inline-block; gap: 10px;
+	}
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+	.isi-dropdown a:hover {
+		color: #fff !important;
+	}
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		background-color: transparent;
+	}
+	.isi-dropdown a {
+		color: aqua!important;
+	}
+	.isi-dropdown a:hover {
+		color: white !important;
+		background: transparent !important;
+	}
     .foto {
-      height: 80px;
-      width: 80px;
+      height: 90px;
+      width: 90px;
       border-radius: 50%;
+      margin-left: 500px;
+      margin-top: 15px;
     }
     .content {
       color: white;
       margin-left: 10px; font-size: 20px;
+      
     }
     .footer {
   position: relative;
@@ -34,18 +79,32 @@ background-attachment: relative; background-size: cover; margin:0; padding:1px;}
   width: 100%;
   background-color: red;
   color: white;
-  text-align: center;
+  text-align: center; 
 }
+
 </style>
 <body>
     <!-- header -->
-
+<div class="menu-malasngoding">
+    <center><a style="font-size: 25px;">PEMBELAJARAN MATEMATIKA</a></center>
+		<ul>
+			<li class="dropdown"><a href="#">About</a>
+				<ul class="isi-dropdown">
+					<li><a href="laman.html">Laman</a></li>
+					<li><a href="#">Konten</a></li>
+				</ul>
+			</li>
+      <li class="dropdown"><a href="#">Literasi</a>
+				<ul class="isi-dropdown">
+					<li><a href="#">Berita</a></li>
+					<li><a href="#">Artikel</a></li>
+					<
+				</ul>
+			</li>
+      <img src="seragam.jpg" class="foto"/>
+      </div>
      <!-- header end -->
     <!-- iSI -->
-    <div class="main">
-      <h2>PEMBELAJARAN MATEMATIKA</h2>
-      <img src="seragam.jpg" class="foto" />
-    </div>
     <div class="content">
       <h3 style="line-height: 1.5px;">KELAS X</h3>
       <ol>
@@ -116,6 +175,7 @@ Suplemen
 </body>
 
 </html>
+
 
 
 
